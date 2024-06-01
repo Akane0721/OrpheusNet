@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrpheusNet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /*background-color: #f5f5f5;*/
+            background-color: #faebd7;
+           /* background-image: url('background-image.jpg'); /* 设置背景图像 */
+            background-size: cover; /* 背景图像铺满整个页面 */
+            /*background-position: center;  背景图像居中显示 */
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 400px;
+        }
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload Image</h1>
+    <p style="text-align: center;">Upload a numbered musical notation image and get the corresponding MIDI file.</p> <!-- 增加系统功能及用法的介绍 -->
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
